@@ -1,15 +1,19 @@
 package com.company;
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-            int [] first = {5, 15, -10, 8, -2};
-            int [] second = {54, 32, -28, -6, 4};
-            int [] result = new int [first.length];
-            String s ="";
-    for(int i = 0; i < first.length; i++ ){
-                result[i]=first[i]+second[i];
-                System.out.print(result[i] +", ");
-            }
+        int[] first = {5, 15, -10, 8, -2};
+        int[] second = {54, 32, -28, -6, 4};
+        System.out.println(Arrays.toString(first) + Arrays.toString(second));
+        int[] result = new int[first.length];
+        String s = "";
+        for (int i = 0; i < first.length; i++) {
+            result[i] = first[i] + second[i];
+
+            System.out.print( result[i] + s + "," );
+
+        }
     }
 }
